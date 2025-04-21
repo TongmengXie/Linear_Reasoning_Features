@@ -1,4 +1,4 @@
-# Linear_Reasoning_Memory_Features
+# Linear_Reasoning_Features
 
 
 This repository contains the data and code for the experiments in our paper titled **[The Reasoning-Memorization Interplay in Language Models Is Mediated by a Single Direction]**
