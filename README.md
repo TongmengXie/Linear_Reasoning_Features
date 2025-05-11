@@ -30,10 +30,10 @@ You can reproduce the experiments in our paper.
 ## How to Run
 
 **Step1: Storing the Hidden-states of Models on Certain Tasks**
-Please run ./LiReFs_storing_hs.ipynb
+Please run ./reasoning_representation/LiReFs_storing_hs.ipynb
 
 **Step2: Create the PCA and other Figures**
-Please run ./Figures_Interp_Reason&Memory.ipynb
+Please run ./reasoning_representation/Figures_Interp_Reason&Memory.ipynb
 
 **Step3: Intervention Experiments**
 ```sh
