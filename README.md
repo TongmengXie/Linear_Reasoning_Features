@@ -31,7 +31,7 @@ You can reproduce the experiments in our paper.
 
 **Step1: unzip the dataset** 
 ```sh
-unzip Interp_Reasoning.zip
+unzip dataset.zip
 ```
 
 **Step2: Storing the Hidden-states of Models on Certain Tasks**
