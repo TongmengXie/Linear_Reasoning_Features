@@ -8,7 +8,7 @@ This repository contains the data and code for the experiments in our paper titl
 
 **1**
 <p align="center">
-  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/interp_reasoning.jpg" width="1000"></a>
+  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/interp_reasoning.png" width="1000"></a>
   <br />
   <em>Linear Reasoning Features(LiReFs)</em>
 </p>
