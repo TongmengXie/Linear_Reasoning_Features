@@ -33,10 +33,13 @@ You can reproduce the experiments in our paper.
 Please run ./LiReFs_storing_hs.ipynb
 
 **Step2: Create the PCA and other Figures**
-Please run ./Jailbreak/jailbreak.ipynb
+Please run ./Figures_Interp_Reason&Memory.ipynb
 
 **Step3: Intervention Experiments**
-Please run ./Jailbreak/jailbreak.ipynb
+```sh
+cd Intervention
+python features_intervention.py
+```
 
 
 ## How to Cite
