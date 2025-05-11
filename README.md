@@ -29,13 +29,18 @@ You can reproduce the experiments in our paper.
 
 ## How to Run
 
-**Step1: Storing the Hidden-states of Models on Certain Tasks**
+**Step1: unzip the dataset** 
+```sh
+unzip Interp_Reasoning.zip
+```
+
+**Step2: Storing the Hidden-states of Models on Certain Tasks**
 Please run ./reasoning_representation/LiReFs_storing_hs.ipynb
 
-**Step2: Create the PCA and other Figures**
+**Step3: Create the PCA and other Figures**
 Please run ./reasoning_representation/Figures_Interp_Reason&Memory.ipynb
 
-**Step3: Intervention Experiments**
+**Step4: Intervention Experiments**
 ```sh
 cd Intervention
 python features_intervention.py
