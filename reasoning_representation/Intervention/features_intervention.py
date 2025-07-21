@@ -187,7 +187,7 @@ elif args.Intervention:
     
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
     loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'))
-    hs_cache_no_cot = loaded_dict['mmlu-pro_3000samples'] 
+    hs_cache_no_cot = loaded_dict['mmlu-pro_3000'] 
 
     with open(os.path.join(dataset_dir, 'mmlu-pro-3000samples.json'), 'r', encoding='utf-8') as f:
           sampled_data = json.load(f)
