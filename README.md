@@ -1,53 +1,34 @@
 # Linear_Reasoning_Features (ACL 2025 Findings)
 
+This repository contains the data and code for the experiments in the paper titled **"The Reasoning-Memorization Interplay in Language Models Is Mediated by a Single Direction"**.
 
-This repository contains the data and code for the experiments in our paper titled **[The Reasoning-Memorization Interplay in Language Models Is Mediated by a Single Direction]**
-
-* **Arxiv:** https://arxiv.org/abs/2503.23084
-
-
-**1**
-<p align="center">
-  <img src="https://github.com/yihuaihong/ConceptVectors.github.io/blob/main/static/images/interp_reasoning.png" width="1000"></a>
-  <br />
-  <em>Illustration of Linear Reasoning Features(LiReFs)</em>
-</p>
-
-
-## Quick Links
-- [Linear Reasoning Features](#lirefs)
-  - [Overview](#overview)
-  - [How to Run](#how-to-run)
-  - [How to Cite](#how-to-cite)
+- **Paper (Arxiv):** https://arxiv.org/abs/2503.23084
 
 ## Overview
-You can reproduce the experiments in our paper.
 
-> **Abstract**
-> Large language models (LLMs) excel on a variety of reasoning benchmarks, but previous studies suggest they sometimes struggle to generalize to unseen questions, potentially due to over-reliance on memorized training examples. However, the precise conditions under which LLMs switch between reasoning and memorization during text generation remain unclear. In this work, we provide a mechanistic understanding of LLMs' reasoning-memorization dynamics by identifying a set of linear features in the model's residual stream that govern the balance between genuine reasoning and memory recall. These features not only distinguish reasoning tasks from memory-intensive ones but can also be manipulated to causally influence model performance on reasoning tasks. Additionally, we show that intervening in these reasoning features helps the model more accurately activate the most relevant problem-solving capabilities during answer generation. Our findings offer new insights into the underlying mechanisms of reasoning and memory in LLMs and pave the way for the development of more robust and interpretable generative AI systems. To support this, we release our code at https://github.com/yihuaihong/Linear_Reasoning_Memory_Features.
-
+This project provides code and datasets to reproduce the experiments from the paper. It investigates the interplay between reasoning and memorization in large language models (LLMs) by identifying linear features in the model's residual stream that mediate this balance.
 
 ## How to Run
 
-**Step1: unzip the dataset** 
-```sh
-unzip dataset.zip
-```
+1. **Unzip the dataset**  
+   ```sh
+   unzip dataset.zip
+   ```
 
-**Step2: Storing the Hidden-states of Models on Certain Tasks**
-Please run ./reasoning_representation/LiReFs_storing_hs.ipynb
+2. **Store Hidden States of Models on Certain Tasks**  
+   Run the notebook: `./reasoning_representation/LiReFs_storing_hs.ipynb`
 
-**Step3: Create the PCA and other Figures**
-Please run ./reasoning_representation/Figures_Interp_Reason&Memory.ipynb
+3. **Create PCA and Other Figures**  
+   Run the notebook: `./reasoning_representation/Figures_Interp_Reason&Memory.ipynb`
 
-**Step4: Intervention Experiments**
-```sh
-cd Intervention
-python features_intervention.py
-```
-
+4. **Run Intervention Experiments**  
+   ```sh
+   cd Intervention
+   python features_intervention.py
+   ```
 
 ## How to Cite
+
 ```
 @misc{hong2025reasoningmemorizationinterplaylanguagemodels,
       title={The Reasoning-Memorization Interplay in Language Models Is Mediated by a Single Direction}, 
@@ -58,5 +39,3 @@ python features_intervention.py
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2503.23084}, 
 }
-```
-

@@ -550,7 +550,9 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
 
 
 def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices):
-
+    '''
+    Sweep the layers of the model to get the candidate directions for reasoning and memory.
+    '''
     candidate_directions = torch.zeros((model_layers_num, mlp_dim_num), dtype=torch.float64, device='cuda')
 
     # calculating candidate reasoning features
@@ -563,7 +565,7 @@ def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, rea
         #print('reason_hs_no_cot.shape: ',reason_hs_no_cot.shape) reason有点多，memory有点少，需要进一步把数据集做scale up    
         memory_hs_no_cot = hs_no_cot[memory_indices, :].to(torch.float64)
 
-        mean_reason_hs_no_cot = reason_hs_no_cot.mean(dim=0)
+        mean_reason_hs_no_cot = reason_hs_no_cot.mean(dim=0) # what is the dimension 0?: (n_samples)
         mean_memory_hs_no_cot = memory_hs_no_cot.mean(dim=0)
 
         mean_diff = mean_reason_hs_no_cot - mean_memory_hs_no_cot  #Reasoning features shape: [bsz, dims] 

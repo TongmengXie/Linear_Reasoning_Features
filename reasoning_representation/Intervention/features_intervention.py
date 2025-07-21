@@ -27,13 +27,13 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Set paths dynamically for the model, output, and dataset directories.")
     
     # 添加命令行参数
-    parser.add_argument('--model_dir', type=str, default="/mnt/workspace/workgroup/yhhong/transformers", help="Directory for the model")
-    parser.add_argument('--model_name', type=str, default='Meta-Llama-3-8B', help="Name of the model")
-    parser.add_argument('--output_dir', type=str, default='/mnt/workspace/Interp_Reasoning/outputs', help="Output directory")
-    parser.add_argument('--dataset_dir', type=str, default='/mnt/workspace/Interp_Reasoning/dataset', help="Dataset directory")
+    parser.add_argument('--model_dir', type=str, default="../../models", help="Directory for the model")
+    parser.add_argument('--model_name', type=str, default='Llama-3.2-1B', help="Name of the model")
+    parser.add_argument('--output_dir', type=str, default='../../outputs', help="Output directory")
+    parser.add_argument('--dataset_dir', type=str, default='../../dataset', help="Dataset directory")
     parser.add_argument('--Intervention', type=bool, default=False, help="Whether to perform features intervention")
     parser.add_argument('--dataset_name', type=str, default='MMLU-Pro', help="MMLU-Pro, GSM8k, PopQA, C-Eval-H, MGSM, GSM-symbolic")
-    parser.add_argument('--hs_cache_dir', type=str, default='/mnt/workspace/workgroup/yhhong', help="hs_cache_dir")
+    parser.add_argument('--hs_cache_dir', type=str, default='../../', help="hs_cache_dir")
     parser.add_argument('--scale', type=float, default=0.1, help="scale for intervention")
 
 
@@ -151,7 +151,7 @@ n_new_tokens = 200
 if not args.Intervention:
 
     #ds_data = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
-    with open('/mnt/workspace/Interp_Reasoning/dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
+    with open('../../dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
         ds_data = json.load(f)
 
     print(f'****Running on {dataset_name} on {model_name} without Intervention')
@@ -162,13 +162,13 @@ if not args.Intervention:
     evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, run_in_fewshot=True, run_in_cot=True, 
                           intervention=False, ablation_dir=None, batch_size=8, ds_name=dataset_name, scale=0.1)
     
-    with open('/mnt/workspace/Interp_Reasoning/dataset/mmlu-pro-3000samples-responses.json', 'w', encoding='utf-8') as f:
+    with open('../../dataset/mmlu-pro-3000samples-responses.json', 'w', encoding='utf-8') as f:
         json.dump(ds_data, f, ensure_ascii=False, indent=4)
     
     if dataset_name != 'MMLU-Pro':
         compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=False, ds_name=dataset_name)
     else:
-        with open('/mnt/workspace/Interp_Reasoning/dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
+        with open('../../dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
             sampled_data = json.load(f)
 
         reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
