@@ -380,9 +380,9 @@ def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=N
             
             if intervention:
                 # generate in interventioning...
-                responses = generate_questions_in_hook(model = model, tokenizer = tokenizer, questions = queries_batch, ablation_dir=ablation_dir, scale=scale, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num=model_layers_num, n_new_tokens=200)
+                responses = generate_questions_in_hook(model = model, tokenizer = tokenizer, questions = queries_batch, ablation_dir=ablation_dir, scale=scale, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num=model_layers_num, n_new_tokens=200, device = device)
             else:
-                responses = generate_questions(model = model, tokenizer = tokenizer, questions = queries_batch, n_new_tokens=200)
+                responses = generate_questions(model = model, tokenizer = tokenizer, questions = queries_batch, n_new_tokens=200, device = device)
                 
             # metric calculating...
             
@@ -554,14 +554,14 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
             return random.choice(['A', 'B', 'C', 'D'])
 
 
-def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices):
+def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices, device='cuda:0'):
     '''
     Sweep the layers of the model to get the candidate directions for reasoning and memory.
     '''
-    candidate_directions = torch.zeros((model_layers_num, mlp_dim_num), dtype=torch.float64, device='cuda')
+    candidate_directions = torch.zeros((model_layers_num, mlp_dim_num), dtype=torch.float64, device=device)
 
     # calculating candidate reasoning features
-    for layer in range(model_layers_num):
+    for layer in range(model_layers_num):   
             
         hs_no_cot = hs_cache_no_cot[layer]
 
