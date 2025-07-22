@@ -1,0 +1,10 @@
+Model Directory: ../../models
+Model Name: Llama-3.2-1B
+Output Directory: ../../outputs
+Dataset Directory: ../../dataset
+Whether to perform Intervention: False
+Dataset Name: GSM-symbolic
+****Running on GSM-symbolic on Llama-3.2-1B without Intervention
+ds_name: GSM-symbolic, answer: 1. Polarization is a property of light. 2. Polarization is a property of light. 3. Polarization is a property of light. 4. Polarization is a property of light. 5. Polarization is a property of light. 6. Polarization is a property of light. 7. Polarization is a property of light. 8. Polarization is a property of light. 9. Polarization is a property of light. 10. Polarization is a property of light. 11. Polarization is a property of light. 12. Polarization is a property of light. 13. Polarization is a property of light. 14. Polarization is a property of light. 15. Polarization is a property of light. 16. Polarization is a property of light. 17. Polarization is a property of light. 18. Polarization is a property of light. 19.
+extraction failed, do a random guess
+ds_name: GSM-symbolic, answer: 1. Polarization is a property of light. 2. Polarization is a property of light. 3. Polarization is a property of light. 4. Polarization is a property of light. 5. Polarization is a property of light. 6. Polarization is a property of light. 7. Polarization is a property of light. 8. Polarization is a property of light. 9. Polarization is a property of light. 10. Polarization is a property of light. 11. Polarization is a property of light. 12. Polarization is a property of light. 13. Polarization is a property of light. 14. Polarization is a property of light. 15. Polarization is a property of light. 16. Polarization is a property of light. 17. Polarization is a property of light. 18. Polarization is a property of light. 19., prediction: None
