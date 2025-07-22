@@ -38,6 +38,7 @@ def parse_args():
     # Added by Tommy
     parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="what to choose from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
     parser.add_argument('--TEST_SAMPLE_SIZE', type=int, default=200, help="test size sampled from dataset_name")
+    parser.add_argument('--BATCH_SIZE', type=int, default=32, help="test size sampled from dataset_name")
 
     return parser.parse_args()
 
@@ -78,6 +79,7 @@ scale = args.scale
 # Added by Tommy
 extracting_from = args.extracting_from
 TEST_SAMPLE_SIZE = args.TEST_SAMPLE_SIZE
+BATCH_SIZE = args.BATCH_SIZE
 
 
 print(f"Model Directory: {model_dir}")
@@ -165,7 +167,7 @@ if not args.Intervention:
 
 
     evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, run_in_fewshot=True, run_in_cot=True, 
-                          intervention=False, ablation_dir=None, batch_size=8, ds_name=dataset_name, scale=0.1)
+                          intervention=False, ablation_dir=None, batch_size=BATCH_SIZE, ds_name=dataset_name, scale=0.1)
     
     with open(f'../../dataset/{extracting_from}samples-responses.json', 'w', encoding='utf-8') as f:
         json.dump(ds_data, f, ensure_ascii=False, indent=4)
@@ -174,7 +176,7 @@ if not args.Intervention:
         compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=False, ds_name=dataset_name)
     else:
         ############ retrieving reasoning and memorisation indices ############
-        with open('../../dataset/mmlu-pro_600samples.json', 'r', encoding='utf-8') as f:
+        with open(f'../../dataset/mmlu-pro_600samples.json', 'r', encoding='utf-8') as f:
             sampled_data = json.load(f)
 
         reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
@@ -194,7 +196,6 @@ elif args.Intervention:
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
     loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'))
     hs_cache_no_cot = loaded_dict[extracting_from] # only using the activation produced by mmlu-pro_600
-
     ############ retrieving reasoning and memorisation indices ############
     with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f: # should test on mmlu-pro_3000 if using vectors extracted using mmlu-pro_600 
           sampled_data = json.load(f)
@@ -209,7 +210,7 @@ elif args.Intervention:
     ds_data = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
     prompt_template, prompt_template_no_cot = load_prompt_template(ds_name = dataset_name, dataset_dir=dataset_dir)
     
-    ds_data = random.sample(ds_data, TEST_SAMPLE_SIZE)
+    ds_data = random.sample(ds_data, min(TEST_SAMPLE_SIZE, len(ds_data)))
     ############ TEST data ############
     
     print(f'****Running on {dataset_name} on {model_name} with Features Intervention')
@@ -226,7 +227,7 @@ elif args.Intervention:
         if dataset_name != 'MMLU-Pro':
 
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
-                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=8, scale=scale)
+                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale)
 
             compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=True, ds_name=dataset_name, intervention_layer=layer)
         else:
@@ -237,7 +238,7 @@ elif args.Intervention:
             memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
             
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
-                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=8, scale=scale)
+                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale)
 
 
             compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 

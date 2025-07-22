@@ -418,8 +418,9 @@ def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=N
                 for answer, entry in zip(responses, entry_batch):
 
                     prediction = get_prediction(answer, ds_name)
-
+#                     print(f"prediction: {prediction}")
                     if float(entry['answer']) == prediction:
+#                     if entry['answer'] == prediction:
                         # success += 1
                         entry['model_predict_correctness'] = True
                     else:
