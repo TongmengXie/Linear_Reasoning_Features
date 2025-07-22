@@ -224,10 +224,10 @@ def form_options_ceval(options: list):
     return option_str
 
 
-def generate_questions(model, tokenizer, questions, n_new_tokens=200):
+def generate_questions(model, tokenizer, questions, n_new_tokens=200, device='cuda:0'):
     
     # inference on base model
-    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to('cuda')
+    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to(device)
     input_length = inputs.input_ids.size(1)
     gen_tokens = model.generate(**inputs, max_new_tokens=n_new_tokens, do_sample=False)
 
@@ -235,7 +235,7 @@ def generate_questions(model, tokenizer, questions, n_new_tokens=200):
     
     return gen_text
 
-def set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=None, model_layers_num=None, attn_name=None, mlp_name=None, direction=None, scale=0.1):
+def set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=None, model_layers_num=None, attn_name=None, mlp_name=None, direction=None, scale=0.1, device='cuda:0'):
     """
     Works on LLaMA, OLMo, Gemma, Yi, Mistral getting activation values from certain positions
     """
@@ -245,7 +245,7 @@ def set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=None, m
             nonlocal direction, scale
             
             direction = direction / (direction.norm(dim=-1, keepdim=True) + 1e-8) #direction需要是一个单位向量
-            direction = direction.to('cuda')
+            direction = direction.to(device)
             
         
             if "hs" in name:  
@@ -266,7 +266,7 @@ def set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=None, m
             nonlocal direction, scale
             
             direction = direction / (direction.norm(dim=-1, keepdim=True) + 1e-8)
-            direction = direction.to('cuda')
+            direction = direction.to(device)
             
             if "attn" in name or "mlp" in name:
                 if isinstance(output, tuple):
@@ -309,9 +309,9 @@ def remove_hooks(hooks):
         hook.remove()
         
         
-def generate_questions_in_hook(model, tokenizer, questions, ablation_dir, scale, layer_name, attn_name, mlp_name, model_layers_num, n_new_tokens=200):
-    
-    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to('cuda')
+def generate_questions_in_hook(model, tokenizer, questions, ablation_dir, scale, layer_name, attn_name, mlp_name, model_layers_num, n_new_tokens=200, device='cuda:0'):
+
+    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to(device)
     input_length = inputs.input_ids.size(1)
 
     # 将所有token位置，所有layer位置的表征往 reasoning or memory的方向上去推动
@@ -325,7 +325,7 @@ def generate_questions_in_hook(model, tokenizer, questions, ablation_dir, scale,
 
         
 def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=None, prompts_no_cot=None, run_in_fewshot=True, run_in_cot=True, 
-                          intervention=False, ablation_dir=None, layer_name = None, model_layers_num=None, attn_name = None, mlp_name = None, batch_size=4, scale=0.1, ds_name='MMLU-Pro'):
+                          intervention=False, ablation_dir=None, layer_name = None, model_layers_num=None, attn_name = None, mlp_name = None, batch_size=4, scale=0.1, ds_name='MMLU-Pro', device='cuda:0'):
     
     queries_batch = []  
     entry_batch = []
