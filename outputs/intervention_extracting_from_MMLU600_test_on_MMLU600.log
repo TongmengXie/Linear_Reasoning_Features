@@ -1,0 +1,336 @@
+Script started on 2025-07-22 09:24:06+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="175" LINES="12"]
+[0m[49m[39m[27m[24m[K
+[1A7[0m[49m[39m]133;A[0m[49m[38;5;208mroot[0m[38;5;208m[49m[38;5;208m[0m[38;5;208m[49m [0m[38;5;208m[49m[38;5;31m[1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/Tommy/[1m[38;5;31m[38;5;39mLinear_Reasoning_Features[0m[38;5;39m[49m[38;5;31m/reasoning_representation/[1m[38;5;31m[38;5;39mIntervention[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m]133;B                                                                                       [0m[49m[38;5;66m09:24:07[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[39m[0m[49m[39m[27m[24m[79C[?2004h[?25l8[0m[49m[39m[27m[24m[J]2;root@99996aae61b2:~/Tommy/Linear_Reasoning_Features/reasoning_representation/Intervention]1;../Intervention[0m[38;5;31m[49m[39m[27m[24m[1m[7m#[27m[1m[0m                                                                                                                                                                              [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[49m[39m[0m[49m[38;5;208mroot[0m[38;5;208m[49m[38;5;208m[0m[38;5;208m[49m [0m[38;5;208m[49m[38;5;31m[1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/Tommy/[1m[38;5;31m[38;5;39mLinear_Reasoning_Features[0m[38;5;39m[49m[38;5;31m/reasoning_representation/[1m[38;5;31m[38;5;39mIntervention[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[38;5;76mmain [38;5;76m*1 [38;5;178m!5 [38;5;39m?2[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[60C[0m[49m[38;5;37mPy arena-env[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;66m 09:24:07[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[39m[81D[?1h=[?25h[?2004hD ppython features_intervention.py[1m [0m[0m --[7mextracting_from[27m[15D[27me[27mx[27mt[27mr[27ma[27mc[27mt[27mi[27mn[27mg[27m_[27mf[27mr[27mo[27mm  [7mmmlu-pro[27m[8D[27mm[27mm[27ml[27mu[27m-[27mp[27mr[27mo——[K[K[1C[0m[49m[38;5;37mPy arena-env[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;66m 09:24:07[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[39m[22D _6[K00 》  > j [7mextracting_from_M[7mM[7mLU600_test_on_MMLU600[27m[K[A[136C[27me[27mx[27mt[27mr[27ma[27mc[27mt[27mi[27mn[27mg[27m_[27mf[27mr[27mo[27mm[27m_[27mMM[27mL[27mU[27m6[27m0[27m0[27m_[27mt[27me[27ms[27mt[27m_[27mo[27mn[27m_[27mM[27mM[27mL[27mU[27m6[27m0[27m0.log[?1l>[?2004l
+]2;python features_intervention.py --extracting_from mmlu-pro_600 > ]1;python^CTraceback (most recent call last):
+  File "/root/Tommy/Linear_Reasoning_Features/reasoning_representation/Intervention/features_intervention.py", line 16, in <module>
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+  File "<frozen importlib._bootstrap>", line 1229, in _handle_fromlist
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2045, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2073, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/models/__init__.py", line 341, in <module>
+    sys.modules[__name__] = _LazyModule(__name__, _file, define_import_structure(_file), module_spec=__spec__)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2594, in define_import_structure
+    import_structure = create_import_structure_from_path(module_path)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2307, in create_import_structure_from_path
+    import_structure[f] = create_import_structure_from_path(os.path.join(module_path, f))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/arena-env/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2332, in create_import_structure_from_path
+    file_content = f.read()
+                   ^^^^^^^^
+  File "<frozen codecs>", line 319, in decode
+KeyboardInterrupt
+
+[1m[7m#[27m[1m[0m                                                                                                                                                                               ]2;root@99996aae61b2:~/Tommy/Linear_Reasoning_Features/reasoning_representation/Intervention]1;../Intervention[0m[27m[24m[J[0m[49m[39m[0m[49m[38;5;208mroot[0m[38;5;208m[49m[38;5;208m[0m[38;5;208m[49m [0m[38;5;208m[49m[38;5;31m[1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mT[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mLinear_Reasoning_Features[0m[38;5;39m[49m[38;5;31m/reasoning_representation/[1m[38;5;31m[38;5;39mIntervention[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[38;5;76mmain [38;5;76m*1 [38;5;178m!5 [38;5;39m?3[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;196m❯[0m[38;5;196m[49m[38;5;196m[0m[38;5;196m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[55C[0m[49m[38;5;160mх INT[0m[38;5;160m[49m[38;5;160m[0m[38;5;160m[49m[38;5;160m[0m[38;5;160m[49m[38;5;101m 5s[0m[38;5;101m[49m[38;5;101m[0m[38;5;101m[49m[38;5;101m[0m[38;5;101m[49m[38;5;37m Py arena-env[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;37m[0m[38;5;37m[49m[38;5;66m 09:27:40[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[38;5;66m[0m[38;5;66m[49m[39m[85D[?1h=[?2004hpython features_intervention.py --extracting_from mmlu-pro_600 > extracting_from_MMLU600_test_on_MMLU600.log[K[A[174C[1C[1C.extracting_from_MMLU600_test_on_MMLU600.log[A[132C.extracting_from_MMLU600_test_on_MMLU600.log[A[132C/extracting_from_MMLU600_test_on_MMLU600.log[A[132C.extracting_from_[1BMLU600_test_on_MMLU600.log[A[132C.extracting_from_MMLU600_test_on_MMLU600.log[A[132C/extracting_from_MMLU600_test_on_MMLU600.log[A[132Coextracting_from_MMLU600_test_on_MMLU600.log[A[132Cuextracting_from_MMLU600_test_on_MMLU600.log[A[132Ctextracting_from_MMLU600_test_on_MMLU600.log[A[132Cpextracting_from_MMLU600_test_on_MMLU600.log[A[132Cuextracting_from_MMLU600_test_on_MMLU600.log[A[132Ctextracting_from_MMLU600_test_on_MMLU600.log[A[132Csextracting_from_MMLU600_test_on_MMLU600.log[A[132C/extracting_from_MMLU600_test_on_MMLU600.log[A[132C[1C[1C[1C[1C[1C[1C[1B[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20Di[P[19C [20D[P[19C [P[18C [A[155Ctes[P[16C [A[155Ctest[P[15C [A[155Ctest_[P[14C [A[155Cest_o[P[13C [A[155Ctest_on[P[12C [A[155Ctest_on_M[P[10C [A[155C[?1l>[?2004l[1B
+]2;python features_intervention.py --extracting_from mmlu-pro_600 > ]1;python0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:19,  2.41s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:36,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:51,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:08,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:24,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:41,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [01:57,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:14,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:28,  1.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:44,  1.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [02:58,  1.91s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:16,  2.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:35,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [03:51,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:06,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:26,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:42,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:03,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:19,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:37,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [05:52,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:11,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:26,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:44,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:00,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+208it [07:20,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+216it [07:36,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+224it [07:51,  2.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+232it [08:06,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+240it [08:23,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+248it [08:39,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+256it [08:55,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+264it [09:14,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+272it [09:36,  2.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+280it [09:54,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+288it [10:13,  2.33s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+296it [10:36,  2.47s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+304it [10:51,  2.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+312it [11:05,  2.14s/it]Setting `pad_token_id` to `e03:45,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:05,  2.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:22,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:36,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:53,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:09,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:31,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:49,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:05,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:22,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:39,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:56,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:15,  2.18s/it]
+104it [00:00, 1430188.90it/s]
+96it [00:00, 1485805.11it/s]
+***Intervention in Layer 7, Memory Subset Accuracy: 0.0865
+***Intervention in Layer 7, Reason Subset Accuracy: 0.0938
+Doing Intervention in Layer 8
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:17,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:33,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:55,  2.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:11,  2.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:30,  2.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:47,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:05,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:19,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:39,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:57,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:15,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:32,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:48,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:06,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:22,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:40,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:58,  2.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:14,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:31,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:49,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:10,  2.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:27,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:43,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:59,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:15,  2.18s/it]
+106it [00:00, 1292430.88it/s]
+94it [00:00, 1471136.48it/s]
+***Intervention in Layer 8, Memory Subset Accuracy: 0.1132
+***Intervention in Layer 8, Reason Subset Accuracy: 0.0745
+Doing Intervention in Layer 9
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:16,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:36,  2.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:53,  2.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:08,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:26,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:46,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:02,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:19,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:35,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:51,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:07,  2.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:24,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:43,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [03:56,  2.01s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:11,  1.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:27,  1.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:45,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:02,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:19,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:34,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [05:54,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:09,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:24,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:41,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:01,  2.11s/it]
+112it [00:00, 1140199.15it/s]
+88it [00:00, 1290555.08it/s]
+***Intervention in Layer 9, Memory Subset Accuracy: 0.0893
+***Intervention in Layer 9, Reason Subset Accuracy: 0.1591
+Doing Intervention in Layer 10
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:16,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:33,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:53,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:16,  2.51s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:33,  2.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:49,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:07,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:22,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:37,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:57,  2.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:13,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:31,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:47,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:04,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:20,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:36,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:54,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:09,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:23,  1.97s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:39,  1.96s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [05:59,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:20,  2.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:35,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:55,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:11,  2.16s/it]
+113it [00:00, 1227866.20it/s]
+87it [00:00, 1188613.84it/s]
+***Intervention in Layer 10, Memory Subset Accuracy: 0.1150
+***Intervention in Layer 10, Reason Subset Accuracy: 0.1379
+Doing Intervention in Layer 11
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:12,  1.61s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:29,  1.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:45,  1.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:03,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:23,  2.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:41,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [01:59,  2.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:15,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:36,  2.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:51,  2.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:06,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:22,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:38,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [03:54,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:11,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:29,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [04:51,  2.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:08,  2.24s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:25,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:42,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:03,  2.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:20,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:35,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:55,  2.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:13,  2.17s/it]
+115it [00:00, 1296626.24it/s]
+85it [00:00, 1250932.77it/s]
+***Intervention in Layer 11, Memory Subset Accuracy: 0.1130
+***Intervention in Layer 11, Reason Subset Accuracy: 0.0588
+Doing Intervention in Layer 12
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:16,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:34,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:49,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:10,  2.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:26,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:43,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:00,  2.13s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:16,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:36,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:56,  2.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:13,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:30,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:45,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:07,  2.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:23,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:40,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [05:00,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:21,  2.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:37,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:56,  2.29s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:12,  2.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:28,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:45,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [07:02,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:20,  2.20s/it]
+108it [00:00, 1336238.44it/s]
+92it [00:00, 1281979.96it/s]
+***Intervention in Layer 12, Memory Subset Accuracy: 0.1019
+***Intervention in Layer 12, Reason Subset Accuracy: 0.1413
+Doing Intervention in Layer 13
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:15,  1.98s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:35,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:50,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:06,  2.06s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:24,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:37,  1.95s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [01:56,  2.09s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:17,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:33,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:53,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:12,  2.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:34,  2.45s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:50,  2.31s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:08,  2.30s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:25,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:48,  2.44s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [05:05,  2.34s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:23,  2.32s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:43,  2.38s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [06:00,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:16,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:32,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:49,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [07:05,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:21,  2.21s/it]
+114it [00:00, 1099196.91it/s]
+86it [00:00, 1174951.61it/s]
+***Intervention in Layer 13, Memory Subset Accuracy: 0.1228
+***Intervention in Layer 13, Reason Subset Accuracy: 0.1512
+Doing Intervention in Layer 14
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:22,  2.85s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:43,  2.66s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [01:00,  2.43s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:16,  2.26s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:37,  2.39s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:53,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:08,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:29,  2.27s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:45,  2.22s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [03:01,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:22,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:38,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:54,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:11,  2.14s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:27,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:44,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [05:01,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:20,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:38,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:55,  2.18s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:13,  2.21s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:30,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:43,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [07:01,  2.07s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:20,  2.20s/it]
+111it [00:00, 1251526.19it/s]
+89it [00:00, 1261125.19it/s]
+***Intervention in Layer 14, Memory Subset Accuracy: 0.1441
+***Intervention in Layer 14, Reason Subset Accuracy: 0.1798
+Doing Intervention in Layer 15
+0it [00:00, ?it/s]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+8it [00:16,  2.00s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+16it [00:32,  2.02s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+24it [00:48,  2.04s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+32it [01:11,  2.36s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+40it [01:27,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+48it [01:49,  2.40s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+56it [02:05,  2.28s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+64it [02:21,  2.20s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+72it [02:38,  2.16s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+80it [02:54,  2.11s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+88it [03:11,  2.12s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+96it [03:26,  2.03s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+104it [03:44,  2.10s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+112it [04:04,  2.23s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+120it [04:20,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+128it [04:40,  2.25s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+136it [05:01,  2.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+144it [05:20,  2.37s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+152it [05:34,  2.19s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+160it [05:51,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+168it [06:06,  2.08s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+176it [06:22,  2.05s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+184it [06:42,  2.17s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+192it [06:58,  2.15s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+200it [07:12,  2.16s/it]
+107it [00:00, 1124788.29it/s]
+93it [00:00, 1295914.52it/s]
+***Intervention in Layer 15, Memory Subset Accuracy: 0.1215
+***Intervention in Layer 15, Reason Subset Accuracy: 0.1505

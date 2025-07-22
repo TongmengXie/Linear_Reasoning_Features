@@ -35,7 +35,9 @@ def parse_args():
     parser.add_argument('--dataset_name', type=str, default='MMLU-Pro', help="MMLU-Pro, GSM8k, PopQA, C-Eval-H, MGSM, GSM-symbolic")
     parser.add_argument('--hs_cache_dir', type=str, default='../../', help="hs_cache_dir")
     parser.add_argument('--scale', type=float, default=0.1, help="scale for intervention")
-
+    # Added by Tommy
+    parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="what to choose from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
+    parser.add_argument('--TEST_SAMPLE_SIZE', type=int, default=200, help="test size sampled from dataset_name")
 
     return parser.parse_args()
 
@@ -73,6 +75,9 @@ output_dir = args.output_dir
 dataset_dir = args.dataset_dir
 dataset_name = args.dataset_name
 scale = args.scale
+# Added by Tommy
+extracting_from = args.extracting_from
+TEST_SAMPLE_SIZE = args.TEST_SAMPLE_SIZE
 
 
 print(f"Model Directory: {model_dir}")
@@ -151,7 +156,7 @@ n_new_tokens = 200
 if not args.Intervention:
 
     #ds_data = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
-    with open('../../dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
+    with open(f'../../dataset/{extracting_from}samples.json', 'r', encoding='utf-8') as f:
         ds_data = json.load(f)
 
     print(f'****Running on {dataset_name} on {model_name} without Intervention')
@@ -162,13 +167,14 @@ if not args.Intervention:
     evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, run_in_fewshot=True, run_in_cot=True, 
                           intervention=False, ablation_dir=None, batch_size=8, ds_name=dataset_name, scale=0.1)
     
-    with open('../../dataset/mmlu-pro-3000samples-responses.json', 'w', encoding='utf-8') as f:
+    with open(f'../../dataset/{extracting_from}samples-responses.json', 'w', encoding='utf-8') as f:
         json.dump(ds_data, f, ensure_ascii=False, indent=4)
     
     if dataset_name != 'MMLU-Pro':
         compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=False, ds_name=dataset_name)
     else:
-        with open('../../dataset/mmlu-pro-3000samples.json', 'r', encoding='utf-8') as f:
+        ############ retrieving reasoning and memorisation indices ############
+        with open('../../dataset/mmlu-pro_600samples.json', 'r', encoding='utf-8') as f:
             sampled_data = json.load(f)
 
         reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
@@ -176,7 +182,7 @@ if not args.Intervention:
 
         compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 
                                             reason_indices=reason_indices, intervention=False)
-
+        ############ retrieving reasoning and memorisation indices ############
         
 
 elif args.Intervention:
@@ -187,21 +193,25 @@ elif args.Intervention:
     
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
     loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'))
-    hs_cache_no_cot = loaded_dict['mmlu-pro_3000'] 
+    hs_cache_no_cot = loaded_dict[extracting_from] # only using the activation produced by mmlu-pro_600
 
-    with open(os.path.join(dataset_dir, 'mmlu-pro-3000samples.json'), 'r', encoding='utf-8') as f:
+    ############ retrieving reasoning and memorisation indices ############
+    with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f: # should test on mmlu-pro_3000 if using vectors extracted using mmlu-pro_600 
           sampled_data = json.load(f)
 
     reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
     memory_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] <= 0.5]
 
     candidate_directions = get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices)
-
+    ############ DONE retrieving reasoning and memorisation indices ############
+    
+    ############ TEST data ############
     ds_data = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
     prompt_template, prompt_template_no_cot = load_prompt_template(ds_name = dataset_name, dataset_dir=dataset_dir)
     
-    ds_data = random.sample(ds_data, 200)
-
+    ds_data = random.sample(ds_data, TEST_SAMPLE_SIZE)
+    ############ TEST data ############
+    
     print(f'****Running on {dataset_name} on {model_name} with Features Intervention')
 
     # Intervention Mode 

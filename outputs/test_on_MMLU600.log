@@ -1,0 +1,8 @@
+Model Directory: ../../models
+Model Name: Llama-3.2-1B
+Output Directory: ../../outputs
+Dataset Directory: ../../dataset
+Whether to perform Intervention: False
+Dataset Name: MMLU-Pro
+****Running on MMLU-Pro on Llama-3.2-1B without Intervention
+len(dataset['validation']):  70

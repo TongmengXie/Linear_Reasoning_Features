@@ -5,7 +5,7 @@
 - `dataset/`  
   Contains datasets used for experiments, including subsets like `ceval-exam/`, `gsm-symbolic_data/`, `gsm8k/`, `HumanEval/`, `mbpp/`, `mgsm/`, `mmlu-pro/`, and `PopQA/`.  
   - Example files:  
-    - `dataset/mmlu-pro-600samples.json`  
+    - `dataset/mmlu-pro_600samples.json`  
     - `dataset/ceval-exam/subject_mapping.json`  
     - `dataset/gsm-symbolic_data/GSM_symbolic.jsonl`
 
