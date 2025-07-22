@@ -83,7 +83,7 @@ TEST_SAMPLE_SIZE = args.TEST_SAMPLE_SIZE
 BATCH_SIZE = args.BATCH_SIZE
 
 device = args.device
-
+print(f"########################################## device: {device} ###############")
 
 print(f"Model Directory: {model_dir}")
 print(f"Model Name: {model_name}")
@@ -197,7 +197,7 @@ elif args.Intervention:
     # mmlu_pro_ds = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
     
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
-    loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'))
+    loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'), map_location=device)
     hs_cache_no_cot = loaded_dict[extracting_from] # only using the activation produced by mmlu-pro_600
     ############ retrieving reasoning and memorisation indices ############
     with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f: # should test on mmlu-pro_3000 if using vectors extracted using mmlu-pro_600 
