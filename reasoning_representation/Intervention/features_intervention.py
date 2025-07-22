@@ -36,9 +36,10 @@ def parse_args():
     parser.add_argument('--hs_cache_dir', type=str, default='../../', help="hs_cache_dir")
     parser.add_argument('--scale', type=float, default=0.1, help="scale for intervention")
     # Added by Tommy
-    parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="Source to extract from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
+    parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="what to choose from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
     parser.add_argument('--TEST_SAMPLE_SIZE', type=int, default=200, help="test size sampled from dataset_name")
     parser.add_argument('--BATCH_SIZE', type=int, default=32, help="test size sampled from dataset_name")
+    parser.add_argument('--device', type=str, default='cuda:0', help="Device to use, e.g., 'cuda:0', 'cuda:1', 'cpu'")
 
     return parser.parse_args()
 
@@ -80,6 +81,8 @@ scale = args.scale
 extracting_from = args.extracting_from
 TEST_SAMPLE_SIZE = args.TEST_SAMPLE_SIZE
 BATCH_SIZE = args.BATCH_SIZE
+
+device = args.device
 
 
 print(f"Model Directory: {model_dir}")
@@ -123,7 +126,7 @@ elif 'qwen' in model.config.model_type.lower():
     
 tokenizer.padding_side = "left"
 
-model.to('cuda')
+model.to(device)
 
 
 if 'gptj' in model.config.model_type.lower():
@@ -167,7 +170,7 @@ if not args.Intervention:
 
 
     evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, run_in_fewshot=True, run_in_cot=True, 
-                          intervention=False, ablation_dir=None, batch_size=BATCH_SIZE, ds_name=dataset_name, scale=0.1)
+                          intervention=False, ablation_dir=None, batch_size=BATCH_SIZE, ds_name=dataset_name, scale=0.1, device=device)
     
     with open(f'../../dataset/{extracting_from}samples-responses.json', 'w', encoding='utf-8') as f:
         json.dump(ds_data, f, ensure_ascii=False, indent=4)
@@ -203,7 +206,7 @@ elif args.Intervention:
     reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
     memory_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] <= 0.5]
 
-    candidate_directions = get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices)
+    candidate_directions = get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices, device=device)
     ############ DONE retrieving reasoning and memorisation indices ############
     
     ############ TEST data ############
@@ -227,7 +230,7 @@ elif args.Intervention:
         if dataset_name != 'MMLU-Pro':
 
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
-                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale)
+                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale, device=device)
 
             compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=True, ds_name=dataset_name, intervention_layer=layer)
         else:
@@ -238,7 +241,7 @@ elif args.Intervention:
             memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
             
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
-                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale)
+                            intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale, device=device)
 
 
             compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 
