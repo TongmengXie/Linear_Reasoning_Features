@@ -517,10 +517,10 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
         pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
         match = re.search(pattern, output)
         if match:
-            #print('prediction success: ',match.group(1))
+            print('prediction success: ',match.group(1))
             return match.group(1)
         else:
-            #print("extraction failed, do a random guess")
+            print("extraction failed, do a random guess")
             global NUll_num  
             NUll_num += 1
             return random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'])
@@ -531,8 +531,10 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
         
         match = re.search(r"The final answer is (\d+\.?\d*)", model_resp)
         if match:
+            print('prediction success: ',match.group(1))
             return float(match.group(1))  # 返回数字作为 float 类型
         else:
+            print("extraction failed, do a random guess")
             return None  # 如果没有找到匹配的数字，返回 None
 
         return float(extracted_num)
@@ -545,8 +547,10 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
         
         # 如果找到了匹配，返回结果，否则返回None
         if match:
+            print('prediction success: ',match.group(1))
             return match.group(1)
         else:
+            print("extraction failed, do a random guess")
             return random.choice(['A', 'B', 'C', 'D'])
 
 
