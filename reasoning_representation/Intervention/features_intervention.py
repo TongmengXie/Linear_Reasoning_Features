@@ -36,7 +36,7 @@ def parse_args():
     parser.add_argument('--hs_cache_dir', type=str, default='../../', help="hs_cache_dir")
     parser.add_argument('--scale', type=float, default=0.1, help="scale for intervention")
     # Added by Tommy
-    parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="what to choose from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
+    parser.add_argument('--extracting_from', type=str, default='mmlu-pro', help="Source to extract from") # choosable: ['mmlu-pro_600', 'mmlu-pro_3000']
     parser.add_argument('--TEST_SAMPLE_SIZE', type=int, default=200, help="test size sampled from dataset_name")
     parser.add_argument('--BATCH_SIZE', type=int, default=32, help="test size sampled from dataset_name")
 

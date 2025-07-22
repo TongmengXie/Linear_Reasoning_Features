@@ -403,10 +403,10 @@ def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=N
 
             elif ds_name in ['GSM8k', 'GSM-symbolic']:  #还要再看看其他的数据形式
                 for answer, entry in zip(responses, entry_batch):
-                    
+                    print(f"ds_name: {ds_name}, answer: {answer}")
                     entry['solution'] = answer
                     prediction = get_prediction(answer, ds_name)
-
+                    print(f"ds_name: {ds_name}, answer: {answer}, prediction: {prediction}")
                     if entry["final_answer"] == prediction:
                         # success += 1
                         entry['model_predict_correctness'] = True
