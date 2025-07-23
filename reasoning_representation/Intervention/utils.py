@@ -232,6 +232,9 @@ def generate_questions(model, tokenizer, questions, n_new_tokens=200, device='cu
     if 'attention_mask' in inputs:
         inputs['attention_mask'] = inputs['attention_mask'].to(device)
     input_length = inputs.input_ids.size(1)
+    print("Model device:", next(model.parameters()).device)
+    print("input_ids device:", inputs['input_ids'].device)
+    print("attention_mask device:", inputs['attention_mask'].device)
     gen_tokens = model.generate(**inputs, max_new_tokens=n_new_tokens, do_sample=False)
     gen_text = tokenizer.batch_decode(gen_tokens[:, input_length:], skip_special_tokens=True)
     return gen_text
