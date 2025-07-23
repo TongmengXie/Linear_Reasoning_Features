@@ -1,0 +1,668 @@
+########################################## device: cuda:1 ###############
+Model Directory: ../../models
+Model Name: DeepSeek-R1-Distill-Qwen-1.5B
+Output Directory: ../../outputs
+Dataset Directory: ../../dataset
+Whether to perform Intervention: False
+Dataset Name: MMLU-Pro
+****Running on MMLU-Pro on DeepSeek-R1-Distill-Qwen-1.5B without Intervention
+len(dataset['validation']):  70
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+prediction success:  E
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  H
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  F
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  G
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  G
+prediction success:  B
+prediction success:  B
+prediction success:  J
+prediction success:  E
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  D
+prediction success:  E
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  A
+prediction success:  H
+prediction success:  F
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  E
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  F
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  I
+prediction success:  G
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  B
+prediction success:  E
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  H
+prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+prediction success:  B
+prediction success:  D
+prediction success:  F
+prediction success:  A
+prediction success:  H
+prediction success:  G
+prediction success:  J
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+prediction success:  B
+prediction success:  G
+prediction success:  D
+prediction success:  F
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  F
+prediction success:  H
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  E
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+prediction success:  F
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  J
+prediction success:  G
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+prediction success:  C
+prediction success:  B
+prediction success:  E
+prediction success:  J
+prediction success:  A
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+prediction success:  C
+prediction success:  H
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  A
+prediction success:  D
+prediction success:  E
+prediction success:  C
+prediction success:  I
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  C
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  H
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  C
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  J
+prediction success:  G
+prediction success:  C
+prediction success:  G
+prediction success:  D
+prediction success:  D
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  G
+prediction success:  A
+prediction success:  E
+prediction success:  E
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  F
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  B
+prediction success:  J
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+prediction success:  A
+prediction success:  D
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  C
+prediction success:  E
+prediction success:  B
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  H
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  H
+prediction success:  B
+prediction success:  C
+prediction success:  B
+prediction success:  G
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  F
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  E
+prediction success:  C
+prediction success:  E
+prediction success:  E
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+prediction success:  A
+prediction success:  A
+prediction success:  F
+prediction success:  F
+prediction success:  A
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+prediction success:  B
+prediction success:  B
+prediction success:  A
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  E
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  C
+prediction success:  H
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  D
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+Model device: cuda:1
+input_ids device: cuda:1
+attention_mask device: cuda:1
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Original performance of Memory Subset Accuracy: 0.1902
+***Original performance of Reason Subset Accuracy: 0.2555

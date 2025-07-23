@@ -267,7 +267,8 @@ elif args.Intervention:
     plt.plot(layers, memory_accuracies, marker='o', label='Memory Subset Accuracy')
     plt.xlabel('Layer')
     plt.ylabel('Accuracy')
-    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name} (Intervention)')
+    dataset_name_full = f"{dataset_name}-reasoning" if dataset_name == "MMLU-Pro" else dataset_name
+    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name_full} (Intervention)')
     plt.grid(True)
     plt.legend()
     mem_fig_path = os.path.join(figs_dir, f'{model_name}_on_{dataset_name}_memory_intervention_accuracy.png')
