@@ -118,12 +118,12 @@ else:
 
 tokenizer = AutoTokenizer.from_pretrained(join(model_dir, model_name), trust_remote_code=True)
 
-# DeepSeek-R1 specific padding handling
-if ('deepseek' in model_name.lower()) or ('deepseek' in getattr(model.config, 'model_type', '').lower()):
+# DeepSeek-R1 and Qwen specific padding handling
+if ('deepseek' in model_name.lower()) or ('deepseek' in getattr(model.config, 'model_type', '').lower()) or ('qwen' in model_name.lower()) or ('qwen' in getattr(model.config, 'model_type', '').lower()):
     if tokenizer.pad_token is None or tokenizer.pad_token_id is None or tokenizer.pad_token_id < 0:
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
-    tokenizer.padding_side = "right"
+    tokenizer.padding_side = "left"
 else:
     if 'llama' in model.config.model_type.lower() or 'mistral' in model.config.model_type.lower() or 'yi' in model.config.model_type.lower() or 'gptj' in model.config.model_type.lower():
         tokenizer.pad_token_id = tokenizer.eos_token_id
