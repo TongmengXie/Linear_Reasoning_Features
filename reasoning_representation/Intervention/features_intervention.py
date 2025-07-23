@@ -197,64 +197,77 @@ if not args.Intervention:
 
 elif args.Intervention:
 
-    # loding MMLU-Pro to get the direction
+    # 1. Run non-intervention baseline and store accuracies
+    # Load test data
+    ds_data = load_dataset(ds_name=dataset_name, dataset_dir=dataset_dir, split='test')
+    prompt_template, prompt_template_no_cot = load_prompt_template(ds_name=dataset_name, dataset_dir=dataset_dir)
+    ds_data = random.sample(ds_data, min(TEST_SAMPLE_SIZE, len(ds_data)))
 
-    # mmlu_pro_ds = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
-    
+    print(f'****Running on {dataset_name} on {model_name} WITHOUT Intervention (for baseline)')
+    # Run baseline evaluation
+    evaluation_on_dataset(
+        model=model,
+        tokenizer=tokenizer,
+        val_sampled_data=ds_data,
+        prompts_cot=prompt_template,
+        prompts_no_cot=prompt_template_no_cot,
+        run_in_fewshot=True,
+        run_in_cot=True,
+        intervention=False,
+        ablation_dir=None,
+        batch_size=BATCH_SIZE,
+        ds_name=dataset_name,
+        scale=0.1,
+        device=device
+    )
+    # Compute and store baseline accuracies
+    if dataset_name != 'MMLU-Pro':
+        mem_acc_baseline, reason_acc_baseline = compute_performance_on_reason_subset(val_sampled_data=ds_data, intervention=False, ds_name=dataset_name), None
+    else:
+        with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f:
+            sampled_data = json.load(f)
+        reason_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] > 0.5]
+        memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
+        mem_acc_baseline, reason_acc_baseline = compute_performance_on_reason_memory_subset(
+            val_sampled_data=ds_data,
+            memory_indices=memory_indices,
+            reason_indices=reason_indices,
+            intervention=False
+        )
+
+    # 2. Do the rest intervention as before
+    # loding MMLU-Pro to get the direction
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
     loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'), map_location=device)
     hs_cache_no_cot = loaded_dict[extracting_from] # only using the activation produced by mmlu-pro_600
-    ############ retrieving reasoning and memorisation indices ############
-    with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f: # should test on mmlu-pro_3000 if using vectors extracted using mmlu-pro_600 
-          sampled_data = json.load(f)
-
+    with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f:
+        sampled_data = json.load(f)
     reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
     memory_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] <= 0.5]
-
     candidate_directions = get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices, device=device)
-    ############ DONE retrieving reasoning and memorisation indices ############
-    
-    ############ TEST data ############
-    ds_data = load_dataset(ds_name = dataset_name, dataset_dir=dataset_dir, split='test')
-    prompt_template, prompt_template_no_cot = load_prompt_template(ds_name = dataset_name, dataset_dir=dataset_dir)
-    
-    ds_data = random.sample(ds_data, min(TEST_SAMPLE_SIZE, len(ds_data)))
-    ############ TEST data ############
-    
-    print(f'****Running on {dataset_name} on {model_name} with Features Intervention')
 
-    # Intervention Mode 
+    print(f'****Running on {dataset_name} on {model_name} WITH Features Intervention')
     layers = []
     memory_accuracies = []
     reason_accuracies = []
     for layer in range(model_layers_num):
-        
         if layer <= 2:
             continue
-        
         print(f'Doing Intervention in Layer {layer}')
         ablation_dir = candidate_directions[layer]
-        
         if dataset_name != 'MMLU-Pro':
-
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
                             intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale, device=device)
-
             mem_acc, reason_acc = compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 
                                             reason_indices=reason_indices, intervention=True, intervention_layer=layer)
         else:
-            
             ds_data = random.sample(sampled_data, 200)
-
             reason_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] > 0.5]
             memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
-            
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
                             intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale, device=device)
-
             mem_acc, reason_acc = compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 
                                             reason_indices=reason_indices, intervention=True, intervention_layer=layer)
-            
         layers.append(layer)
         memory_accuracies.append(mem_acc)
         reason_accuracies.append(reason_acc)
@@ -265,10 +278,11 @@ elif args.Intervention:
     # Memory accuracy plot
     plt.figure(figsize=(10,6))
     plt.plot(layers, memory_accuracies, marker='o', label='Memory Subset Accuracy')
+    if mem_acc_baseline is not None:
+        plt.axhline(mem_acc_baseline, color='red', linestyle='--', label='Non-Intervention Baseline')
     plt.xlabel('Layer')
     plt.ylabel('Accuracy')
-    dataset_name_full = f"{dataset_name}-reasoning" if dataset_name == "MMLU-Pro" else dataset_name
-    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name_full} (Intervention)')
+    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name} (Intervention)')
     plt.grid(True)
     plt.legend()
     mem_fig_path = os.path.join(figs_dir, f'{model_name}_on_{dataset_name}_memory_intervention_accuracy.png')
@@ -278,6 +292,8 @@ elif args.Intervention:
     # Reason accuracy plot
     plt.figure(figsize=(10,6))
     plt.plot(layers, reason_accuracies, marker='o', color='orange', label='Reason Subset Accuracy')
+    if reason_acc_baseline is not None:
+        plt.axhline(reason_acc_baseline, color='red', linestyle='--', label='Non-Intervention Baseline')
     plt.xlabel('Layer')
     plt.ylabel('Accuracy')
     plt.title(f'Reason Subset Accuracy vs Layer for {model_name} on {dataset_name} (Intervention)')
