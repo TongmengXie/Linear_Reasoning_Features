@@ -2,7 +2,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import os
 
-model_name = 'llama_3.2_1b_instruct_rlhf'
+model_name = 'Llama-3.2-1B'
 model_dir = '../../models'  # Adjust if needed
 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
@@ -29,7 +29,7 @@ print('pad_token_id:', tokenizer.pad_token_id)
 print('padding_side:', tokenizer.padding_side)
 
 # Prepare a minimal batch for testing
-test_questions = ["What is the capital of France?", "What is 2+2?"]
+test_questions = ["What is the capital of France?", "What is 2+2?", "hello!"]
 inputs = tokenizer(test_questions, return_tensors='pt', padding='longest', return_token_type_ids=False)
 inputs['input_ids'] = inputs['input_ids'].to(device)
 if 'attention_mask' in inputs:
@@ -41,7 +41,7 @@ if 'attention_mask' in inputs:
 # Try a minimal generation with verbose error catching
 try:
     print('Model device before generation:', next(model.parameters()).device)
-    gen_tokens = model.generate(**inputs, max_new_tokens=10, do_sample=False)
+    gen_tokens = model.generate(**inputs, max_new_tokens=10, do_sample=False, pad_token_id=tokenizer.pad_token_id)
     print('Generation successful!')
     print('Generated tokens:', gen_tokens)
     print('Decoded:', tokenizer.batch_decode(gen_tokens, skip_special_tokens=True))
