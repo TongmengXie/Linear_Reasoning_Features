@@ -225,14 +225,15 @@ def form_options_ceval(options: list):
 
 
 def generate_questions(model, tokenizer, questions, n_new_tokens=200, device='cuda:0'):
-    
     # inference on base model
-    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to(device)
+    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False)
+    if 'input_ids' in inputs:
+        inputs['input_ids'] = inputs['input_ids'].to(device)
+    if 'attention_mask' in inputs:
+        inputs['attention_mask'] = inputs['attention_mask'].to(device)
     input_length = inputs.input_ids.size(1)
     gen_tokens = model.generate(**inputs, max_new_tokens=n_new_tokens, do_sample=False)
-
     gen_text = tokenizer.batch_decode(gen_tokens[:, input_length:], skip_special_tokens=True)
-    
     return gen_text
 
 def set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=None, model_layers_num=None, attn_name=None, mlp_name=None, direction=None, scale=0.1, device='cuda:0'):
@@ -310,17 +311,16 @@ def remove_hooks(hooks):
         
         
 def generate_questions_in_hook(model, tokenizer, questions, ablation_dir, scale, layer_name, attn_name, mlp_name, model_layers_num, n_new_tokens=200, device='cuda:0'):
-
-    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False).to(device)
+    inputs = tokenizer(questions, return_tensors="pt", padding="longest", return_token_type_ids=False)
+    if 'input_ids' in inputs:
+        inputs['input_ids'] = inputs['input_ids'].to(device)
+    if 'attention_mask' in inputs:
+        inputs['attention_mask'] = inputs['attention_mask'].to(device)
     input_length = inputs.input_ids.size(1)
-
-    # 将所有token位置，所有layer位置的表征往 reasoning or memory的方向上去推动
     hooks = set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=layer_name, model_layers_num=model_layers_num, attn_name=attn_name, mlp_name=mlp_name, direction=ablation_dir, scale=scale)
     gen_tokens = model.generate(**inputs, max_new_tokens=n_new_tokens, do_sample=False)
     remove_hooks(hooks)
-
     gen_text = tokenizer.batch_decode(gen_tokens[:, input_length:], skip_special_tokens=True)
-    
     return gen_text
 
         
