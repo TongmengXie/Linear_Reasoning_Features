@@ -461,7 +461,6 @@ def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=N
             entry_batch = []
             
 def compute_performance_on_reason_memory_subset(val_sampled_data=None, memory_indices=None, reason_indices=None, intervention=False, intervention_layer=None):
-    
     val_sampled_memory_data = [val_sampled_data[i] for i in memory_indices]
     val_sampled_reason_data = [val_sampled_data[i] for i in reason_indices]
 
@@ -471,9 +470,7 @@ def compute_performance_on_reason_memory_subset(val_sampled_data=None, memory_in
     for ix, entry in tqdm(enumerate(val_sampled_memory_data)):
         if entry['model_predict_correctness'] == True:
             correct_predictions += 1
-    
-    memory_accuracy = correct_predictions / total_predictions
-    
+    memory_accuracy = correct_predictions / total_predictions if total_predictions > 0 else 0.0
 
     correct_predictions = 0
     total_predictions = len(val_sampled_reason_data)
@@ -481,16 +478,15 @@ def compute_performance_on_reason_memory_subset(val_sampled_data=None, memory_in
     for ix, entry in tqdm(enumerate(val_sampled_reason_data)):
         if entry['model_predict_correctness'] == True:
             correct_predictions += 1
+    reason_accuracy = correct_predictions / total_predictions if total_predictions > 0 else 0.0
 
-    reason_accuracy = correct_predictions / total_predictions
-    
     if intervention:
         print(f"***Intervention in Layer {intervention_layer}, Memory Subset Accuracy: {memory_accuracy:.4f}")
         print(f"***Intervention in Layer {intervention_layer}, Reason Subset Accuracy: {reason_accuracy:.4f}")
-    
     else:
         print(f"***Original performance of Memory Subset Accuracy: {memory_accuracy:.4f}")
         print(f"***Original performance of Reason Subset Accuracy: {reason_accuracy:.4f}")
+    return memory_accuracy, reason_accuracy
 
 def compute_performance_on_reason_subset(val_sampled_data=None, intervention=False, ds_name=None, intervention_layer=None):
 
