@@ -324,7 +324,7 @@ def generate_questions_in_hook(model, tokenizer, questions, ablation_dir, scale,
     print("input_ids device:", inputs['input_ids'].device)
     if 'attention_mask' in inputs:
         print("attention_mask device:", inputs['attention_mask'].device)
-    hooks = set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=layer_name, model_layers_num=model_layers_num, attn_name=attn_name, mlp_name=mlp_name, direction=ablation_dir, scale=scale)
+    hooks = set_act_modify_hooks(model, hs=True, mlp=True, attn=True, layer_name=layer_name, model_layers_num=model_layers_num, attn_name=attn_name, mlp_name=mlp_name, direction=ablation_dir, scale=scale, device=device)
     gen_tokens = model.generate(**inputs, max_new_tokens=n_new_tokens, do_sample=False)
     remove_hooks(hooks)
     gen_text = tokenizer.batch_decode(gen_tokens[:, input_length:], skip_special_tokens=True)
@@ -387,9 +387,9 @@ def evaluation_on_dataset(model, tokenizer, val_sampled_data=None, prompts_cot=N
             
             if intervention:
                 # generate in interventioning...
-                responses = generate_questions_in_hook(model = model, tokenizer = tokenizer, questions = queries_batch, ablation_dir=ablation_dir, scale=scale, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num=model_layers_num, n_new_tokens=200)
+                responses = generate_questions_in_hook(model = model, tokenizer = tokenizer, questions = queries_batch, ablation_dir=ablation_dir, scale=scale, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num=model_layers_num, n_new_tokens=200, device=device)
             else:
-                responses = generate_questions(model = model, tokenizer = tokenizer, questions = queries_batch, n_new_tokens=200)
+                responses = generate_questions(model = model, tokenizer = tokenizer, questions = queries_batch, n_new_tokens=200, device=device)
                 
             # metric calculating...
             
