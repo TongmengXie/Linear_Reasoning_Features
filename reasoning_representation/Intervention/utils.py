@@ -550,7 +550,7 @@ def get_prediction(output=None, ds_name='MMLU-Pro'):
             return random.choice(['A', 'B', 'C', 'D'])
 
 
-def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices):
+def get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices, device='cuda:0'):
     '''
     Sweep the layers of the model to get the candidate directions for reasoning and memory.
     '''

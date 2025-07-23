@@ -118,14 +118,18 @@ else:
 
 tokenizer = AutoTokenizer.from_pretrained(join(model_dir, model_name), trust_remote_code=True)
 
-if 'llama' in model.config.model_type.lower() or 'mistral' in model.config.model_type.lower() or 'yi' in model.config.model_type.lower() or 'gptj' in model.config.model_type.lower():
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-elif 'qwen' in model.config.model_type.lower():
-    tokenizer.pad_token = '<|endoftext|>'
-    # in gemma, pad_token_id = 0 is default
-    # in olmo, pad_token_id = 1 is default
-    
-tokenizer.padding_side = "left"
+# DeepSeek-R1 specific padding handling
+if ('deepseek' in model_name.lower()) or ('deepseek' in getattr(model.config, 'model_type', '').lower()):
+    if tokenizer.pad_token is None or tokenizer.pad_token_id is None or tokenizer.pad_token_id < 0:
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+    tokenizer.padding_side = "right"
+else:
+    if 'llama' in model.config.model_type.lower() or 'mistral' in model.config.model_type.lower() or 'yi' in model.config.model_type.lower() or 'gptj' in model.config.model_type.lower():
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+    elif 'qwen' in model.config.model_type.lower():
+        tokenizer.pad_token = '<|endoftext|>'
+    tokenizer.padding_side = "left"
 
 model.to(device)
 
@@ -256,7 +260,7 @@ elif args.Intervention:
         reason_accuracies.append(reason_acc)
 
     # Plotting logic
-    figs_dir = os.path.join('figs_tabs')
+    figs_dir = os.path.join('../../figs_tabs')
     os.makedirs(figs_dir, exist_ok=True)
     # Memory accuracy plot
     plt.figure(figsize=(10,6))
