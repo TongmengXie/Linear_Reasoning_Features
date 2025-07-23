@@ -240,10 +240,12 @@ elif args.Intervention:
     save_path = os.path.join(args.hs_cache_dir, 'reasoning_representations_outputs')
     loaded_dict = torch.load(os.path.join(save_path, f'{model_name}-base_hs_cache_no_cot_all.pt'), map_location=device)
     hs_cache_no_cot = loaded_dict[extracting_from] # only using the activation produced by mmlu-pro_600
+    # Reload the original data to ensure 'memory_reason_score' is present
     with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f:
         sampled_data = json.load(f)
-    reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] > 0.5]
-    memory_indices = [ix for ix, sample in enumerate(sampled_data) if sample['memory_reason_score'] <= 0.5]
+    # Use .get() to avoid KeyError
+    reason_indices = [ix for ix, sample in enumerate(sampled_data) if sample.get('memory_reason_score') is not None and sample['memory_reason_score'] > 0.5]
+    memory_indices = [ix for ix, sample in enumerate(sampled_data) if sample.get('memory_reason_score') is not None and sample['memory_reason_score'] <= 0.5]
     candidate_directions = get_candidate_directions(hs_cache_no_cot, model_layers_num, mlp_dim_num, reason_indices, memory_indices, device=device)
 
     print(f'****Running on {dataset_name} on {model_name} WITH Features Intervention')
