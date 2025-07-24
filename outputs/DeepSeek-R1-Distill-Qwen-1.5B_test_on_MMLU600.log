@@ -3,643 +3,2373 @@ Model Directory: ../../models
 Model Name: DeepSeek-R1-Distill-Qwen-1.5B
 Output Directory: ../../outputs
 Dataset Directory: ../../dataset
-Whether to perform Intervention: False
+Whether to perform Intervention: True
 Dataset Name: MMLU-Pro
-****Running on MMLU-Pro on DeepSeek-R1-Distill-Qwen-1.5B without Intervention
 len(dataset['validation']):  70
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
+****Running on MMLU-Pro on DeepSeek-R1-Distill-Qwen-1.5B WITHOUT Intervention (for baseline)
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+prediction success:  A
 prediction success:  H
-prediction success:  A
-extraction failed, do a random guess
 prediction success:  B
-extraction failed, do a random guess
-prediction success:  J
-prediction success:  A
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  G
-prediction success:  E
-prediction success:  B
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  H
-prediction success:  A
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  B
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  C
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
 prediction success:  F
-prediction success:  E
-prediction success:  D
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  F
-prediction success:  J
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  H
-prediction success:  F
-prediction success:  I
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  F
-prediction success:  G
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  A
-prediction success:  E
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  G
-prediction success:  B
-prediction success:  B
-prediction success:  J
-prediction success:  E
-prediction success:  A
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  D
-extraction failed, do a random guess
-prediction success:  J
-prediction success:  D
-prediction success:  E
-prediction success:  B
-prediction success:  D
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  H
-prediction success:  D
-prediction success:  A
-extraction failed, do a random guess
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  A
-prediction success:  H
-prediction success:  F
-prediction success:  A
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
-extraction failed, do a random guess
 prediction success:  B
 extraction failed, do a random guess
 extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  H
-prediction success:  D
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  D
-prediction success:  E
-prediction success:  I
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  E
-prediction success:  C
-prediction success:  G
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  B
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  I
-prediction success:  E
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
 prediction success:  A
 extraction failed, do a random guess
-extraction failed, do a random guess
 prediction success:  A
-prediction success:  E
-prediction success:  A
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  B
-prediction success:  D
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  B
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  F
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  A
-prediction success:  E
-prediction success:  B
 prediction success:  I
 prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+prediction success:  B
+prediction success:  C
+prediction success:  B
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  C
+prediction success:  C
+prediction success:  E
+prediction success:  H
+prediction success:  D
+prediction success:  H
+prediction success:  G
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  F
+prediction success:  I
 prediction success:  D
 extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  H
-prediction success:  B
-prediction success:  B
-prediction success:  E
-prediction success:  A
-prediction success:  A
-prediction success:  A
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  A
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  H
-prediction success:  C
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  H
-extraction failed, do a random guess
+prediction success:  F
 extraction failed, do a random guess
 prediction success:  B
 extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  C
 prediction success:  A
-extraction failed, do a random guess
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  I
 extraction failed, do a random guess
 prediction success:  H
-prediction success:  D
-prediction success:  B
-prediction success:  D
-prediction success:  F
-prediction success:  A
-prediction success:  H
-prediction success:  G
-prediction success:  J
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  A
-prediction success:  B
-prediction success:  G
-prediction success:  D
 prediction success:  F
 prediction success:  A
 prediction success:  G
+prediction success:  C
+prediction success:  A
 extraction failed, do a random guess
 extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
 extraction failed, do a random guess
-prediction success:  E
-prediction success:  E
 prediction success:  B
-extraction failed, do a random guess
 prediction success:  C
 prediction success:  F
-prediction success:  H
 prediction success:  G
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  A
-prediction success:  D
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  A
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  D
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  I
-extraction failed, do a random guess
-prediction success:  G
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  H
-prediction success:  E
-prediction success:  A
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  E
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  G
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  E
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  G
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  B
-prediction success:  F
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  F
-extraction failed, do a random guess
-prediction success:  G
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  D
-prediction success:  A
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  A
-extraction failed, do a random guess
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  J
-prediction success:  G
-prediction success:  C
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  D
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  A
-prediction success:  E
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  F
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  E
-prediction success:  C
-prediction success:  B
-prediction success:  E
-prediction success:  J
-prediction success:  A
-prediction success:  B
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  I
-prediction success:  C
-prediction success:  H
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  A
-prediction success:  D
-prediction success:  E
-prediction success:  C
-prediction success:  I
-prediction success:  E
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  F
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  F
-prediction success:  C
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  F
-prediction success:  D
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  E
-prediction success:  H
-prediction success:  D
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  C
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  J
-prediction success:  G
-prediction success:  C
-prediction success:  G
-prediction success:  D
-prediction success:  D
-prediction success:  A
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  G
-prediction success:  A
-prediction success:  E
-prediction success:  E
-prediction success:  C
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  D
-prediction success:  F
-prediction success:  C
-prediction success:  G
-extraction failed, do a random guess
-prediction success:  F
-prediction success:  E
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  E
-prediction success:  F
-extraction failed, do a random guess
-prediction success:  B
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  B
-prediction success:  J
-prediction success:  A
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  D
-prediction success:  A
-prediction success:  D
-prediction success:  G
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  C
-prediction success:  E
-prediction success:  B
-prediction success:  E
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  D
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-extraction failed, do a random guess
-prediction success:  I
-prediction success:  A
 prediction success:  I
 extraction failed, do a random guess
 prediction success:  A
 extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  A
-prediction success:  H
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  B
-prediction success:  E
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  C
-prediction success:  H
-prediction success:  B
-extraction failed, do a random guess
-prediction success:  F
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  B
-prediction success:  H
-extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  H
-prediction success:  B
-prediction success:  C
-prediction success:  B
-prediction success:  G
-prediction success:  J
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  E
-extraction failed, do a random guess
-prediction success:  C
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  G
-extraction failed, do a random guess
-prediction success:  A
-extraction failed, do a random guess
-prediction success:  H
-prediction success:  F
-prediction success:  B
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  F
 prediction success:  D
-prediction success:  C
-prediction success:  G
-extraction failed, do a random guess
-prediction success:  A
-prediction success:  A
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
-prediction success:  E
-prediction success:  C
-prediction success:  E
-prediction success:  E
-prediction success:  A
-prediction success:  G
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  G
-prediction success:  E
-prediction success:  A
-prediction success:  A
-prediction success:  F
-prediction success:  F
-prediction success:  A
-prediction success:  C
-prediction success:  A
-extraction failed, do a random guess
 prediction success:  B
-prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
 prediction success:  B
 prediction success:  B
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
 prediction success:  A
-prediction success:  G
-prediction success:  F
+prediction success:  C
+prediction success:  C
+prediction success:  C
+prediction success:  I
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  C
+prediction success:  D
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  I
+prediction success:  B
+prediction success:  E
 extraction failed, do a random guess
 prediction success:  D
-prediction success:  E
-prediction success:  E
+prediction success:  A
+prediction success:  A
+prediction success:  D
 prediction success:  B
-prediction success:  C
+prediction success:  G
+prediction success:  A
+prediction success:  E
+prediction success:  A
+prediction success:  B
+prediction success:  I
 extraction failed, do a random guess
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+prediction success:  D
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  D
+prediction success:  C
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
 prediction success:  J
 extraction failed, do a random guess
-extraction failed, do a random guess
-extraction failed, do a random guess
-prediction success:  B
-prediction success:  B
-prediction success:  C
-prediction success:  H
 prediction success:  F
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  G
+prediction success:  C
+prediction success:  D
 extraction failed, do a random guess
 prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  H
+How many reasoning dataset did we get? 0
+How many memorisation dataset did we get? 0
+***Original performance of Memory Subset Accuracy: 0.0000
+***Original performance of Reason Subset Accuracy: 0.0000
+How many reasoning dataset did we get? 274
+How many memorisation dataset did we get? 326
+****Running on MMLU-Pro on DeepSeek-R1-Distill-Qwen-1.5B WITH Features Intervention
+Doing Intervention in Layer 3
+How many reasoning dataset did we get? 93
+How many memorisation dataset did we get? 107
+prediction success:  C
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  I
 prediction success:  B
 extraction failed, do a random guess
 prediction success:  I
 extraction failed, do a random guess
 extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+prediction success:  C
+prediction success:  I
+prediction success:  H
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  E
+prediction success:  F
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  I
 prediction success:  A
 prediction success:  E
 extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  I
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  I
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+prediction success:  C
+prediction success:  G
+prediction success:  C
+prediction success:  H
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+prediction success:  C
+prediction success:  E
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  G
+prediction success:  B
+prediction success:  A
+prediction success:  H
+prediction success:  E
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  E
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  H
+prediction success:  A
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  B
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  D
+prediction success:  A
+prediction success:  F
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  I
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 3, Memory Subset Accuracy: 0.2430
+***Intervention in Layer 3, Reason Subset Accuracy: 0.1935
+Doing Intervention in Layer 4
+How many reasoning dataset did we get? 108
+How many memorisation dataset did we get? 92
+prediction success:  A
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  H
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
 prediction success:  A
 prediction success:  D
+prediction success:  B
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+prediction success:  E
+prediction success:  B
+prediction success:  D
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+prediction success:  E
+prediction success:  A
+prediction success:  J
+prediction success:  A
+prediction success:  B
+prediction success:  I
+prediction success:  I
+prediction success:  C
+prediction success:  E
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+prediction success:  H
+prediction success:  A
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  C
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  B
+prediction success:  D
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  B
+prediction success:  F
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  I
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  J
+prediction success:  G
+prediction success:  A
+prediction success:  D
+prediction success:  A
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+***Intervention in Layer 4, Memory Subset Accuracy: 0.2065
+***Intervention in Layer 4, Reason Subset Accuracy: 0.2778
+Doing Intervention in Layer 5
+How many reasoning dataset did we get? 98
+How many memorisation dataset did we get? 102
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  E
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  H
+prediction success:  B
+prediction success:  G
+prediction success:  B
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+prediction success:  A
+prediction success:  F
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  C
+prediction success:  D
+prediction success:  J
+prediction success:  E
+prediction success:  B
+prediction success:  E
+prediction success:  A
+prediction success:  A
+prediction success:  G
+prediction success:  B
+prediction success:  B
+prediction success:  A
+prediction success:  E
+prediction success:  A
+prediction success:  C
+prediction success:  E
+prediction success:  A
+prediction success:  F
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  D
+prediction success:  A
+prediction success:  F
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  F
+prediction success:  F
+prediction success:  H
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+prediction success:  B
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  B
+prediction success:  A
+prediction success:  E
+prediction success:  I
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  F
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  J
+prediction success:  A
+prediction success:  F
+prediction success:  C
+prediction success:  H
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  E
+prediction success:  A
+prediction success:  F
+prediction success:  B
+prediction success:  J
+prediction success:  G
+prediction success:  I
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  I
+prediction success:  B
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  C
+prediction success:  B
+prediction success:  C
+prediction success:  D
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  E
+prediction success:  E
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  J
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+***Intervention in Layer 5, Memory Subset Accuracy: 0.1863
+***Intervention in Layer 5, Reason Subset Accuracy: 0.2653
+Doing Intervention in Layer 6
+How many reasoning dataset did we get? 93
+How many memorisation dataset did we get? 107
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  A
+prediction success:  C
+prediction success:  I
+prediction success:  A
+prediction success:  A
+prediction success:  J
+prediction success:  E
+prediction success:  H
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  I
+prediction success:  H
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+prediction success:  A
+prediction success:  C
+prediction success:  I
+prediction success:  C
+prediction success:  C
+prediction success:  B
+prediction success:  B
+prediction success:  G
+prediction success:  D
+prediction success:  J
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  A
+prediction success:  B
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  E
+prediction success:  A
+prediction success:  J
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+prediction success:  B
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+prediction success:  A
+prediction success:  E
+prediction success:  F
+prediction success:  A
+prediction success:  G
+prediction success:  J
+prediction success:  G
+prediction success:  C
+prediction success:  E
+prediction success:  B
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  F
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+***Intervention in Layer 6, Memory Subset Accuracy: 0.2523
+***Intervention in Layer 6, Reason Subset Accuracy: 0.2151
+Doing Intervention in Layer 7
+How many reasoning dataset did we get? 97
+How many memorisation dataset did we get? 103
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  F
+prediction success:  B
+prediction success:  B
+prediction success:  J
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  H
+prediction success:  G
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  C
+prediction success:  B
+prediction success:  E
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  E
+prediction success:  E
+prediction success:  E
+prediction success:  G
+prediction success:  A
+prediction success:  F
+prediction success:  D
+prediction success:  E
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  F
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  B
+prediction success:  E
+prediction success:  H
+prediction success:  I
+prediction success:  E
+prediction success:  H
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+prediction success:  H
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  I
+prediction success:  I
+prediction success:  G
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+***Intervention in Layer 7, Memory Subset Accuracy: 0.2233
+***Intervention in Layer 7, Reason Subset Accuracy: 0.1959
+Doing Intervention in Layer 8
+How many reasoning dataset did we get? 98
+How many memorisation dataset did we get? 102
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  B
+prediction success:  J
+prediction success:  C
+prediction success:  G
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  E
+prediction success:  C
+prediction success:  A
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+prediction success:  D
+prediction success:  G
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  J
+prediction success:  C
+prediction success:  D
+prediction success:  F
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  F
+prediction success:  G
+prediction success:  D
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+prediction success:  I
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  H
+prediction success:  F
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  C
+prediction success:  G
+prediction success:  H
+prediction success:  B
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  I
+prediction success:  C
+prediction success:  I
+prediction success:  F
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  J
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  I
+prediction success:  H
+prediction success:  D
+prediction success:  D
+prediction success:  I
+prediction success:  J
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  E
+prediction success:  B
+prediction success:  A
+prediction success:  E
+prediction success:  C
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  B
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+prediction success:  F
+prediction success:  I
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+prediction success:  H
+***Intervention in Layer 8, Memory Subset Accuracy: 0.1471
+***Intervention in Layer 8, Reason Subset Accuracy: 0.2041
+Doing Intervention in Layer 9
+How many reasoning dataset did we get? 87
+How many memorisation dataset did we get? 113
+prediction success:  F
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  H
+prediction success:  G
+prediction success:  B
+prediction success:  I
+prediction success:  D
+prediction success:  J
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  D
+prediction success:  E
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  E
+prediction success:  J
+prediction success:  B
+prediction success:  A
+prediction success:  D
+prediction success:  B
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  B
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 9, Memory Subset Accuracy: 0.0973
+***Intervention in Layer 9, Reason Subset Accuracy: 0.2759
+Doing Intervention in Layer 10
+How many reasoning dataset did we get? 81
+How many memorisation dataset did we get? 119
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  F
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 10, Memory Subset Accuracy: 0.1681
+***Intervention in Layer 10, Reason Subset Accuracy: 0.2716
+Doing Intervention in Layer 11
+How many reasoning dataset did we get? 95
+How many memorisation dataset did we get? 105
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+***Intervention in Layer 11, Memory Subset Accuracy: 0.1810
+***Intervention in Layer 11, Reason Subset Accuracy: 0.1895
+Doing Intervention in Layer 12
+How many reasoning dataset did we get? 94
+How many memorisation dataset did we get? 106
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  a
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+prediction success:  D
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+***Intervention in Layer 12, Memory Subset Accuracy: 0.1887
+***Intervention in Layer 12, Reason Subset Accuracy: 0.1596
+Doing Intervention in Layer 13
+How many reasoning dataset did we get? 93
+How many memorisation dataset did we get? 107
+prediction success:  H
+prediction success:  A
 prediction success:  G
 extraction failed, do a random guess
 prediction success:  B
 extraction failed, do a random guess
 extraction failed, do a random guess
-prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
 prediction success:  C
 extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
 prediction success:  C
-Model device: cuda:1
-input_ids device: cuda:1
-attention_mask device: cuda:1
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
 extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  B
@@ -647,10 +2377,36 @@ prediction success:  A
 extraction failed, do a random guess
 prediction success:  G
 extraction failed, do a random guess
-prediction success:  B
+extraction failed, do a random guess
 prediction success:  A
 extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  B
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
 prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  H
 extraction failed, do a random guess
@@ -658,11 +2414,2928 @@ extraction failed, do a random guess
 extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 13, Memory Subset Accuracy: 0.1121
+***Intervention in Layer 13, Reason Subset Accuracy: 0.2258
+Doing Intervention in Layer 14
+How many reasoning dataset did we get? 100
+How many memorisation dataset did we get? 100
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  c
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 14, Memory Subset Accuracy: 0.1100
+***Intervention in Layer 14, Reason Subset Accuracy: 0.2400
+Doing Intervention in Layer 15
+How many reasoning dataset did we get? 96
+How many memorisation dataset did we get? 104
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  F
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  c
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 15, Memory Subset Accuracy: 0.1058
+***Intervention in Layer 15, Reason Subset Accuracy: 0.2917
+Doing Intervention in Layer 16
+How many reasoning dataset did we get? 91
+How many memorisation dataset did we get? 109
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
 prediction success:  E
 extraction failed, do a random guess
 extraction failed, do a random guess
 prediction success:  A
 extraction failed, do a random guess
 extraction failed, do a random guess
-***Original performance of Memory Subset Accuracy: 0.1902
-***Original performance of Reason Subset Accuracy: 0.2555
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 16, Memory Subset Accuracy: 0.1009
+***Intervention in Layer 16, Reason Subset Accuracy: 0.2308
+Doing Intervention in Layer 17
+How many reasoning dataset did we get? 91
+How many memorisation dataset did we get? 109
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  D
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  H
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  F
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+***Intervention in Layer 17, Memory Subset Accuracy: 0.1284
+***Intervention in Layer 17, Reason Subset Accuracy: 0.2857
+Doing Intervention in Layer 18
+How many reasoning dataset did we get? 81
+How many memorisation dataset did we get? 119
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+***Intervention in Layer 18, Memory Subset Accuracy: 0.1176
+***Intervention in Layer 18, Reason Subset Accuracy: 0.2346
+Doing Intervention in Layer 19
+How many reasoning dataset did we get? 94
+How many memorisation dataset did we get? 106
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+***Intervention in Layer 19, Memory Subset Accuracy: 0.0849
+***Intervention in Layer 19, Reason Subset Accuracy: 0.1809
+Doing Intervention in Layer 20
+How many reasoning dataset did we get? 87
+How many memorisation dataset did we get? 113
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  G
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  I
+prediction success:  G
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+***Intervention in Layer 20, Memory Subset Accuracy: 0.0796
+***Intervention in Layer 20, Reason Subset Accuracy: 0.1954
+Doing Intervention in Layer 21
+How many reasoning dataset did we get? 95
+How many memorisation dataset did we get? 105
+prediction success:  A
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  J
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+***Intervention in Layer 21, Memory Subset Accuracy: 0.1333
+***Intervention in Layer 21, Reason Subset Accuracy: 0.2526
+Doing Intervention in Layer 22
+How many reasoning dataset did we get? 88
+How many memorisation dataset did we get? 112
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  D
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+prediction success:  A
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  G
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  A
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+prediction success:  H
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  J
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+prediction success:  D
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  A
+***Intervention in Layer 22, Memory Subset Accuracy: 0.1696
+***Intervention in Layer 22, Reason Subset Accuracy: 0.3182
+Doing Intervention in Layer 23
+How many reasoning dataset did we get? 80
+How many memorisation dataset did we get? 120
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+prediction success:  D
+prediction success:  E
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  C
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  E
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  B
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  E
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  J
+prediction success:  G
+prediction success:  A
+prediction success:  E
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  D
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  E
+prediction success:  C
+***Intervention in Layer 23, Memory Subset Accuracy: 0.1833
+***Intervention in Layer 23, Reason Subset Accuracy: 0.3250
+Doing Intervention in Layer 24
+How many reasoning dataset did we get? 92
+How many memorisation dataset did we get? 108
+prediction success:  A
+prediction success:  A
+prediction success:  E
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  C
+prediction success:  D
+prediction success:  A
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  B
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  I
+prediction success:  B
+prediction success:  C
+prediction success:  B
+prediction success:  G
+prediction success:  B
+prediction success:  G
+prediction success:  D
+prediction success:  I
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  D
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  F
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+prediction success:  E
+prediction success:  D
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  G
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  I
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  H
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+prediction success:  E
+prediction success:  H
+prediction success:  B
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+prediction success:  A
+prediction success:  C
+prediction success:  D
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  E
+prediction success:  A
+prediction success:  B
+prediction success:  H
+prediction success:  D
+prediction success:  H
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  G
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+***Intervention in Layer 24, Memory Subset Accuracy: 0.2222
+***Intervention in Layer 24, Reason Subset Accuracy: 0.2826
+Doing Intervention in Layer 25
+How many reasoning dataset did we get? 87
+How many memorisation dataset did we get? 113
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  D
+prediction success:  E
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  F
+prediction success:  D
+prediction success:  D
+prediction success:  E
+prediction success:  C
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  F
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  a
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  J
+prediction success:  E
+prediction success:  B
+prediction success:  E
+prediction success:  E
+prediction success:  D
+prediction success:  G
+prediction success:  G
+prediction success:  H
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  B
+prediction success:  B
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  J
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  B
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  C
+prediction success:  E
+prediction success:  A
+prediction success:  B
+prediction success:  A
+prediction success:  E
+prediction success:  E
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  A
+prediction success:  F
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  H
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  C
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+***Intervention in Layer 25, Memory Subset Accuracy: 0.2301
+***Intervention in Layer 25, Reason Subset Accuracy: 0.1954
+Doing Intervention in Layer 26
+How many reasoning dataset did we get? 85
+How many memorisation dataset did we get? 115
+prediction success:  A
+prediction success:  F
+prediction success:  B
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  E
+prediction success:  C
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  J
+prediction success:  A
+prediction success:  J
+prediction success:  A
+prediction success:  A
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  B
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+prediction success:  E
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  G
+prediction success:  D
+prediction success:  G
+prediction success:  J
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  A
+prediction success:  A
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+prediction success:  B
+prediction success:  C
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  D
+prediction success:  B
+prediction success:  C
+prediction success:  I
+prediction success:  B
+prediction success:  E
+prediction success:  C
+prediction success:  G
+prediction success:  H
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  A
+prediction success:  A
+prediction success:  A
+prediction success:  G
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  F
+prediction success:  I
+prediction success:  H
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  G
+prediction success:  H
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+prediction success:  A
+prediction success:  A
+prediction success:  G
+prediction success:  G
+prediction success:  G
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  B
+prediction success:  D
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  D
+prediction success:  A
+prediction success:  E
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+prediction success:  F
+prediction success:  B
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  G
+prediction success:  H
+prediction success:  B
+prediction success:  I
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+***Intervention in Layer 26, Memory Subset Accuracy: 0.1478
+***Intervention in Layer 26, Reason Subset Accuracy: 0.2118
+Doing Intervention in Layer 27
+How many reasoning dataset did we get? 99
+How many memorisation dataset did we get? 101
+prediction success:  B
+prediction success:  A
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  B
+prediction success:  A
+prediction success:  F
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  F
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  J
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  F
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  B
+prediction success:  F
+prediction success:  a
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  G
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  I
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  G
+prediction success:  A
+prediction success:  E
+prediction success:  A
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  H
+prediction success:  E
+prediction success:  E
+prediction success:  H
+prediction success:  C
+prediction success:  F
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  I
+extraction failed, do a random guess
+prediction success:  C
+prediction success:  H
+prediction success:  E
+prediction success:  E
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+extraction failed, do a random guess
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  J
+prediction success:  J
+prediction success:  A
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  B
+prediction success:  D
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  H
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  D
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  A
+prediction success:  I
+prediction success:  C
+prediction success:  B
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  B
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  G
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  G
+prediction success:  A
+prediction success:  B
+prediction success:  A
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  B
+prediction success:  D
+prediction success:  A
+prediction success:  C
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  J
+prediction success:  H
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  J
+prediction success:  I
+prediction success:  A
+prediction success:  G
+prediction success:  E
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  E
+prediction success:  A
+prediction success:  B
+prediction success:  A
+extraction failed, do a random guess
+prediction success:  F
+prediction success:  A
+prediction success:  C
+prediction success:  G
+prediction success:  H
+extraction failed, do a random guess
+prediction success:  A
+prediction success:  C
+prediction success:  G
+extraction failed, do a random guess
+prediction success:  C
+extraction failed, do a random guess
+prediction success:  A
+extraction failed, do a random guess
+extraction failed, do a random guess
+prediction success:  I
+prediction success:  G
+prediction success:  E
+prediction success:  A
+prediction success:  H
+extraction failed, do a random guess
+extraction failed, do a random guess
+***Intervention in Layer 27, Memory Subset Accuracy: 0.1683
+***Intervention in Layer 27, Reason Subset Accuracy: 0.2222
