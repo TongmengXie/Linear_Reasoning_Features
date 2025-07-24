@@ -226,8 +226,8 @@ elif args.Intervention:
     else:
         with open(os.path.join(dataset_dir, f'{extracting_from}samples.json'), 'r', encoding='utf-8') as f:
             sampled_data = json.load(f)
-        reason_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] > 0.5]
-        memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
+        reason_indices = [ix for ix, sample in enumerate(ds_data) if sample.get('memory_reason_score', 0.0) > 0.5]
+        memory_indices = [ix for ix, sample in enumerate(ds_data) if sample.get('memory_reason_score', 0.0) <= 0.5]
         mem_acc_baseline, reason_acc_baseline = compute_performance_on_reason_memory_subset(
             val_sampled_data=ds_data,
             memory_indices=memory_indices,
@@ -264,8 +264,8 @@ elif args.Intervention:
                                             reason_indices=reason_indices, intervention=True, intervention_layer=layer)
         else:
             ds_data = random.sample(sampled_data, 200)
-            reason_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] > 0.5]
-            memory_indices = [ix for ix, sample in enumerate(ds_data) if sample['memory_reason_score'] <= 0.5]
+            reason_indices = [ix for ix, sample in enumerate(ds_data) if sample.get('memory_reason_score', 0.0) > 0.5]
+            memory_indices = [ix for ix, sample in enumerate(ds_data) if sample.get('memory_reason_score', 0.0) <= 0.5]
             evaluation_on_dataset(model = model, tokenizer = tokenizer, val_sampled_data=ds_data, prompts_cot=prompt_template, prompts_no_cot=prompt_template_no_cot, ds_name=dataset_name, run_in_fewshot=True, run_in_cot=True, 
                             intervention=True, ablation_dir=ablation_dir, layer_name = layer_name, attn_name = attn_name, mlp_name = mlp_name, model_layers_num = model_layers_num, batch_size=BATCH_SIZE, scale=scale, device=device)
             mem_acc, reason_acc = compute_performance_on_reason_memory_subset(val_sampled_data=ds_data, memory_indices=memory_indices, 
