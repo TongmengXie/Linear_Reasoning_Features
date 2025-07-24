@@ -63,7 +63,7 @@ def load_prompt_template(ds_name, dataset_dir):
 
     print("len(dataset['validation']): ",len(dataset['validation']))
     for d in dataset['validation']:
-        prompts_cot[d['category']] += 'Q:' + ' ' + d['question'] + '\n' + form_options(d['options']) + '\n' + d['cot_content'] + '\n\n'
+        prompts_cot[d['category']] += 'Q:' + ' ' + d['question'] + '\n' + form_options(d['options']) + '\n' + d['cot_content'] + '\nThe answer is (' + d['answer'] + ').\n\n'
         prompts_no_cot[d['category']] += 'Q:' + ' ' + d['question'] + '\n' + form_options(d['options']) + '\n' + f"The answer is ({d['answer']})." + '\n\n'
     
     template = prompts_cot
@@ -84,7 +84,7 @@ def load_prompt_template(ds_name, dataset_dir):
         c_eval_h_item_list = c_eval_h_item.to_dict(orient='records')
         
         for d in c_eval_h_item_list:
-            prompts_cot[c] += '问题: ' + d['question'] + '\n' + form_options_ceval([d['A'], d['B'], d['C'], d['D']]) + '\n' + '让我们一步一步思考，'+d['explanation'] +'所以答案是' + d['answer']+ '\n\n'
+            prompts_cot[c] += '问题: ' + d['question'] + '\n' + form_options_ceval([d['A'], d['B'], d['C'], d['D']]) + '\n' + '让我们一步一步思考，'+d['explanation'] +'所以答案是' + d['answer']+ '\nThe answer is (' + d['answer'] + ').\n\n'
             # prompts_no_cot[c] += '问题:' + ' ' + d['question'] + '\n' + form_options_ceval([d['A'], d['B'], d['C'], d['D']]) + '\n' + f"The answer is ({d['answer']})." + '\n\n'
         
         prompts_cot[c] = f"以下是中国关于{c}考试的单项选择题，请选出其中的正确答案。\n" + prompts_cot[c] 
@@ -515,45 +515,42 @@ def compute_performance_on_reason_subset(val_sampled_data=None, intervention=Fal
 
         
 def get_prediction(output=None, ds_name='MMLU-Pro'):
-    
+    import re
     if ds_name == 'MMLU-Pro':
-        pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
-        match = re.search(pattern, output)
+        pattern = r"answer is\s*\(?([ABCDEFGHIJ])\)?[\s\.,!\)]*"
+        match = re.search(pattern, output, re.IGNORECASE)
         if match:
             print('prediction success: ',match.group(1))
             return match.group(1)
         else:
             print("extraction failed, do a random guess")
+            with open('extraction_failures.log', 'a', encoding='utf-8') as logf:
+                logf.write(f"Failed to extract from: {output}\n")
             global NUll_num  
             NUll_num += 1
             return random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'])
-        
     elif ds_name in ['GSM8k', 'GSM-symbolic', 'MGSM']:
-        
         model_resp = output 
-        
-        match = re.search(r"The final answer is (\d+\.?\d*)", model_resp)
+        pattern = r"final answer\s*is\s*([-]?\d+\.?\d*)|final answer:\s*([-]?\d+\.?\d*)|the answer is\s*([-]?\d+\.?\d*)"
+        match = re.search(pattern, model_resp, re.IGNORECASE)
         if match:
-            print('prediction success: ',match.group(1))
-            return float(match.group(1))  # 返回数字作为 float 类型
+            print('prediction success: ',match.group(1) or match.group(2) or match.group(3))
+            return float(match.group(1) or match.group(2) or match.group(3))
         else:
             print("extraction failed, do a random guess")
-            return None  # 如果没有找到匹配的数字，返回 None
-
-        return float(extracted_num)
-
+            with open('extraction_failures.log', 'a', encoding='utf-8') as logf:
+                logf.write(f"Failed to extract from: {model_resp}\n")
+            return None
     elif ds_name in ['C-Eval-H']:
-        
         text = output
-        # 定义正则表达式，匹配 "所以答案是" 后面的选项
         match = re.search(r"所以答案是\s*([ABCD])", text)
-        
-        # 如果找到了匹配，返回结果，否则返回None
         if match:
             print('prediction success: ',match.group(1))
             return match.group(1)
         else:
             print("extraction failed, do a random guess")
+            with open('extraction_failures.log', 'a', encoding='utf-8') as logf:
+                logf.write(f"Failed to extract from: {text}\n")
             return random.choice(['A', 'B', 'C', 'D'])
 
 
