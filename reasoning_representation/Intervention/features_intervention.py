@@ -199,7 +199,9 @@ elif args.Intervention:
 
     # 1. Run non-intervention baseline and store accuracies
     # Load test data
-    ds_data = load_dataset(ds_name=dataset_name, dataset_dir=dataset_dir, split='test')
+#     ds_data = load_dataset(ds_name=dataset_name, dataset_dir=dataset_dir, split='test')
+    with open(f'../../dataset/{extracting_from}samples.json', 'r', encoding='utf-8') as f:
+            ds_data = json.load(f)
     prompt_template, prompt_template_no_cot = load_prompt_template(ds_name=dataset_name, dataset_dir=dataset_dir)
     ds_data = random.sample(ds_data, min(TEST_SAMPLE_SIZE, len(ds_data)))
 
