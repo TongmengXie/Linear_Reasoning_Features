@@ -285,19 +285,6 @@ elif args.Intervention:
     # Plotting logic
     figs_dir = os.path.join('../../figs_tabs')
     os.makedirs(figs_dir, exist_ok=True)
-    # Memory accuracy plot
-    plt.figure(figsize=(10,6))
-    plt.plot(layers, memory_accuracies, marker='o', label='Memory Subset Accuracy')
-    if mem_acc_baseline is not None:
-        plt.axhline(mem_acc_baseline, color='red', linestyle='--', label='Non-Intervention Baseline')
-    plt.xlabel('Layer')
-    plt.ylabel('Accuracy')
-    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name} (Intervention)')
-    plt.grid(True)
-    plt.legend()
-    mem_fig_path = os.path.join(figs_dir, f'{model_name}_on_{dataset_name}_memory_intervention_accuracy.png')
-    plt.savefig(mem_fig_path)
-    plt.show()
 
     # Reason accuracy plot
     plt.figure(figsize=(10,6))
@@ -313,6 +300,22 @@ elif args.Intervention:
     plt.savefig(reason_fig_path)
     plt.show()
 
+
+    # Memory accuracy plot
+    plt.figure(figsize=(10,6))
+    plt.plot(layers, memory_accuracies, marker='o', label='Memory Subset Accuracy')
+    if mem_acc_baseline is not None:
+        plt.axhline(mem_acc_baseline, color='red', linestyle='--', label='Non-Intervention Baseline')
+    plt.xlabel('Layer')
+    plt.ylabel('Accuracy')
+    plt.title(f'Memory Subset Accuracy vs Layer for {model_name} on {dataset_name} (Intervention)')
+    plt.grid(True)
+    plt.legend()
+    mem_fig_path = os.path.join(figs_dir, f'{model_name}_on_{dataset_name}_memory_intervention_accuracy.png')
+    plt.savefig(mem_fig_path)
+    plt.show()
+
+    
 
 # model_output_dir = os.path.join(output_dir, model_name)  
 # os.makedirs(model_output_dir, exist_ok=True)
